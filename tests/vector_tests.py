@@ -69,3 +69,13 @@ class VectorTests(unittest.TestCase):
         v1 = vector.Vector(1, 1, 1)
         v2 = vector.Vector(3, 4, 5)
         self.assertEqual(vector.Vector(4, 5, 6), v1 + v2)
+
+    def test_sub(self):
+        v1 = vector.Vector(3, 3, 3)
+        v2 = vector.Vector(1, 1, 1)
+        self.assertEqual(vector.Vector(2, 2, 2), v1 - v2)
+
+    def test_mul(self):
+        v1 = vector.Vector(3, 4, 5)
+        self.assertEqual(vector.Vector(6, 8, 10), v1*2)
+
