@@ -8,6 +8,9 @@ class Vector:
         self.z = z
         self.magnitude = self._calc_magnitude()
 
+    def __str__(self):
+        return f"({self.x}, {self.y}, {self.z})"
+
     def __eq__(self, other):
         if not isinstance(other, Vector):
             return False
